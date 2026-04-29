@@ -37,9 +37,9 @@ def on_press(key):
 
 def update_status():
     if clicking:
-        status_label.config(text="STATUS: AN", fg="#00ff88")
+        status_label.config(text="STATUS: ON", fg="#00ff88")
     else:
-        status_label.config(text="STATUS: AUS", fg="#ff4444")
+        status_label.config(text="STATUS: OFF", fg="#ff4444")
 
 def update_cps(val):
     global cps
@@ -64,7 +64,7 @@ title = tk.Label(frame, text="pro autoclicker by rajonaise",
                  fg="white", bg="#0f0f0f", font=("Segoe UI", 14))
 title.pack(pady=10)
 
-status_label = tk.Label(frame, text="STATUS: AUS",
+status_label = tk.Label(frame, text="STATUS: OFF",
                         fg="#ff4444", bg="#0f0f0f")
 status_label.pack(pady=5)
 
@@ -79,7 +79,7 @@ slider = tk.Scale(frame, from_=1, to=200, orient="horizontal",
 slider.set(20)
 slider.pack(pady=10)
 
-info = tk.Label(frame, text="Toggle mit #",
+info = tk.Label(frame, text="Toggle autoclicker with #",
                 fg="#888", bg="#0f0f0f")
 info.pack(pady=5)
 
