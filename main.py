@@ -55,6 +55,7 @@ root = tk.Tk()
 root.title("pro autoclicker by rajonaise")
 root.geometry("320x220")
 root.configure(bg="#0f0f0f")
+root.attributes("-topmost", True)
 
 frame = tk.Frame(root, bg="#0f0f0f")
 frame.pack(expand=True)
